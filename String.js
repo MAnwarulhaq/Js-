@@ -13,3 +13,18 @@ let fancy = `Hello, ${name}!`; // template literal with variable
 console.log(name); // Output: Haadi
 console.log(greeting); // Output: What's up?
 console.log(fancy); // Output: Hello, Haadi!
+
+//String methods (some handy ones):
+let msg = "JavaScript";
+
+console.log(msg.length);          // 10
+console.log(msg.toUpperCase());  // "JAVASCRIPT"
+console.log(msg.toLowerCase());  // "javascript"
+console.log(msg.includes("Script")); // true
+console.log(msg.slice(4));       // "Script"
+
+//Concatenation (joining strings):
+let firstName = "Haadi";
+let lastName = "Dev";
+let fullName = firstName + " " + lastName; // "Haadi Dev"
+console.log(fullName); // Output: Haadi Dev
