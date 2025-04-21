@@ -56,4 +56,5 @@ switch (expression) {
       console.log("Another day");
   }
   //Output: Wednesday
-
+// What is break statement in switch case
+//break stops the execution of more case blocks once a match is found.
