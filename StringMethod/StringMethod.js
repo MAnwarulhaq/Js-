@@ -106,3 +106,67 @@ console.log(str4.substring(7, 4)); // "Scr" (it swaps the arguments)
 
 // Negative index? Nope!
 console.log(str4.substring(-2)); // "JavaScript" (treats -2 as 0)
+
+//toLowerCase()
+// Converts all characters in a string to lowercase, returning a new string.
+// Syntax: string.toLowerCase()
+// Example:
+const str5 = "Hello, World!";
+console.log(str5.toLowerCase()); // "hello, world!"
+
+//toUpperCase()
+// Converts all characters in a string to uppercase, returning a new string.
+// Syntax: string.toUpperCase()
+// Example:
+const str6 = "Hello, World!";
+console.log(str6.toUpperCase()); // "HELLO, WORLD!"
+
+//trim()
+// Removes whitespace from both ends of a string, returning a new string.
+// Syntax: string.trim()
+// Example:
+const str7 = "   Hello, World!   ";
+console.log(str7.trim()); // "Hello, World!"
+
+// trimStart() and trimEnd()
+// Removes whitespace from the start or end of a string, respectively.
+// Syntax: string.trimStart() or string.trimEnd()
+// Example:
+const str8 = "   Hello, World!   ";
+console.log(str8.trimStart()); // "Hello, World!   "
+console.log(str8.trimEnd());   // "   Hello, World!"
+
+// .replace() method
+// The .replace() method in JavaScript is used to replace a specified substring with another substring in a string. It returns a new string with the replacement made.
+// Syntax:
+// string.replace(searchValue, newValue)
+// searchValue: The substring you want to replace. It can be a string or a regular expression.
+// newValue: The string you want to replace the searchValue with.
+// Example:
+const str9 = "Hello, World!";
+console.log(str9.replace("World", "JavaScript")); // "Hello, JavaScript!"
+console.log(str9.replace(/o/g, "0")); // "Hell0, W0rld!" (replaces all 'o' with '0')
+console.log(str9.replace(/o/i, "0")); // "Hell0, World!" (replaces first 'o' with '0', case-insensitive)
+
+// .search() method
+// The .search() method in JavaScript is used to search for a specified substring or regular expression within a string. It returns the index of the first match found, or -1 if no match is found.
+// Syntax:
+// string.search(searchValue)
+// searchValue: The substring or regular expression you want to search for.
+// Example:
+const str10 = "Hello, World!";
+console.log(str10.search("World")); // 7 (index of "World")
+console.log(str10.search("JavaScript")); // -1 (not found)
+
+// .startsWith() method
+// The .startsWith() method in JavaScript is used to check if a string starts with a specified substring. It returns true if the string starts with the specified substring, and false otherwise.
+// Syntax:
+// string.startsWith(searchValue, startIndex)
+// searchValue: The substring you want to check for at the start of the string.
+// startIndex (optional): The index at which to start the search. Default is 0.
+// Example:
+const str11 = "JavaScript is awesome";
+
+console.log(str11.startsWith("Java"));      // true
+console.log(str11.startsWith("Script"));    // false
+console.log(str11.startsWith("Script", 4)); // true (starts at index 4)
