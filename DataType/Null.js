@@ -25,7 +25,7 @@ let userProfile = {
   
 
   //Difference between null and undefined:
- // nullnn                   |                undefined
+ // null                     |                undefined
 // You set it yourself       | JS sets it when variable is unassigned
 // Means intentional nothing | Means missing or not yet defined
 
