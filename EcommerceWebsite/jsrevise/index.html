@@ -15,24 +15,56 @@
     </style>
     <script>
         // console.log("inline js")
-        document.write(
-            "<div class = 'card'>" +
-            " <h1 > Anwar </h1> <p>adedeefe </p> " +
-            " <h1 > Anwar </h1> <p>MERN </p> " +
 
-            "</div>"
-        )
-        const a = "name"
-        const b = 1234
-        let arr = [1, 2, 3, 4, 5, 6, 7]
-        console.log(typeof (arr))
-        console.log(typeof (b))
-        console.log(typeof (a))
+        // let marks = prompt("enter your percentage");
+
+        // let grade = marks >= 90
+        //     ? "A"
+        //     : marks >= 75
+        //         ? "B"
+        //         : marks >= 50
+        //             ? "C"
+        //             : "Fail";
+
+        // console.log(grade);
+
+        function clickme() {
+            alert("button click")
+        }
+
+        // for( var a = 1; a <= 100; a = a + 10)
+        // {
+        //     for(b = a ; b < a + 10; b++)
+        //     {
+        //         document.write(b + "")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        for (var a = 1; a <= 5; a++) {
+            for (b = 1; b <= a; b++) {
+                document.write(a + "")
+            }
+            document.write("<br>")
+        }
+
+        function keydown(){
+            console.log("down")
+        }
+
+
     </script>
 </head>
 
-<body>
-    <h1>Js </h1>
+<body >
+    <input onkeydown="console.log('down')">
+    <input onkeyup="console.log('up')">
+
+    <!-- <p onmouseout="clickme()">Js </p> -->
+    <button onclick="clickme()">click me</button>
+    <button ondblclick="clickme()">click me</button>
+    <button onload="clickme()">click me</button>
 </body>
 
 </html>
