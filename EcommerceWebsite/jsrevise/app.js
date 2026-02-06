@@ -1,9 +1,6 @@
-// variable 
+let id = document.getElementById("demo")
 
-const a = "name"
-const b = 1234
-let arr = [1,2,3,4,5,6,7]
+let a = [1,2,3,4,5,6]
 
-console.log(typeof(arr))
-console.log(typeof(b))
-console.log(typeof(a))
+let b = a.indexOf(100)
+id.innerHTML=b

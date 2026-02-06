@@ -4,6 +4,7 @@ const inputtext = document.getElementById("inputtext");
 
 let debounceTimer;
 
+
 // Input search with debounce
 inputtext.addEventListener("input", () => {
     clearTimeout(debounceTimer);
@@ -16,7 +17,7 @@ inputtext.addEventListener("input", () => {
         } else {
             searchProducts(query);
         }
-    }, 500); // ⏱ debounce time
+    }, 500); 
 });
 
 // Fetch all products
@@ -29,6 +30,8 @@ function fetchAllProducts() {
             showProducts(data.products);
         });
 }
+
+fetchAllProducts();
 
 // Search products from API
 function searchProducts(query) {
@@ -66,5 +69,7 @@ function showProducts(products) {
     });
 }
 
-// Initial load
-fetchAllProducts();
+
+
+const containerq = document.getElementById("containerq")
+console.log(containerq.firstElementChild)
